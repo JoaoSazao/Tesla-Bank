@@ -1,17 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
   <link rel="shortcut icon" href="/assets/logo/logo.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/styles.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Tesla Bank</title>
 </head>
+
 <body>
-  
+
+  <header class="container_smartphone">
+    <nav class="bg-[#EB3850] border-gray-200 dark:border-gray-700">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="/assets/logo/logo-header.png" class="h-8 pl-7" alt="Flowbite Logo" />
+        </a>
+        <button data-collapse-toggle="navbar-hamburger" type="button"
+          class="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-white rounded-lg focus:outline-none"
+          aria-controls="navbar-hamburger" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+        <div class="hidden w-full" id="navbar-hamburger">
+          <ul class="flex flex-col font-medium mt-4 rounded-lg">
+            <li>
+              <a href="#" class="block py-2 px-3 text-[#EB3850] bg-white rounded" aria-current="page">TeslaBank</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-white rounded hover:bg-gray-100 light:hover:bg-[#C9C9C9] hover:text-[#EB3850]">Conta
+                digital</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:dark:hover:text-white light:hover:bg-[#C9C9C9] hover:text-[#EB3850]">Para
+                você</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="h-[28rem] bg-[#EB3850] flex text-center justify-center items-center flex-col gap-4 p-4">
+      <img class="" src="/assets/img/Cards.png" alt="Cartões Tesla Bank">
+
+      <h3 class="text-white font-bold text-2xl">TeslaBank<br> Banco 100% digital</h3>
+      <p class="text-white">Abrir uma conta digital nunca foi tão simples!</p>
+
+      <button type="button"
+        class="text-[#333333] bg-white focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center hover:text-[#EB3850]">
+        Abrir uma conta
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 14 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 5h12m0 0L9 1m4 4L9 9" />
+        </svg>
+      </button>
+    </section>
+
+  </header>
+
+  <main>
+
+    <section>
+
+      <div class="p-8">
+        <h1 class="font-bold text-[#333333] text-[30px] mt-6 mb-2">Abra sua conta<br><strong
+            class="text-[#EB3850] mb-6">gratuita</strong>!</h1>
+        <p>Envie e receba dinheiro de forma mais prática e rápida. Faça Pix, TEDs e transferências com agendamento para
+          todos os
+          bancos sem pagar nada.</p>
+      </div>
+
+      <ul>
+        <li>
+          <img src="/assets/img/Element01.png">
+          <h5>Seu dinheiro rendendo mais</h5>
+          <p>Rendem mais que a poupança e você resgata quando quiser</p>
+        </li>
+        <li>
+          <img src="/assets/img/Element02.png">
+          <h5>Conta digital 100% grátis</h5>
+          <p>Transferências, boletos de depósito e outros serviços gratuitos</p>
+        </li>
+        <li>
+          <img src="/assets/img/Element03.png">
+          <h5>Cartão sem anuidade</h5>
+          <p>Conta digital com cartão de crédito sem anuidade e sem complicação</p>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
   <script src="/app/app.js"></script>
 </body>
+
 </html>
