@@ -15,7 +15,56 @@
 <body>
 
   <header class="container_smartphone">
-    <nav class="bg-[#EB3850] border-gray-200 dark:border-gray-700">
+
+    <!-- NAVBAR NORMAL -->
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 lg:block sm:hidden hidden">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="/assets/logo/logo-header.png" class="h-8" alt="Flowbite Logo" />
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <button type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get
+            started</button>
+          <button data-collapse-toggle="navbar-cta" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-cta" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+          <ul
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="#"
+                class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
+                aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- NAVBAR HAMBURGUER -->
+    <nav class="bg-[#EB3850] border-gray-200 dark:border-gray-700 sm:md:block lg:hidden">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="/assets/logo/logo-header.png" class="h-8 pl-7" alt="Flowbite Logo" />
@@ -36,12 +85,12 @@
             </li>
             <li>
               <a href="#"
-                class="block py-2 px-3 text-white rounded hover:bg-gray-100 light:hover:bg-[#C9C9C9] hover:text-[#EB3850]">Conta
+                class="block py-2 px-3 text-white rounded hover:bg-white light:hover:bg-white hover:text-[#EB3850]">Conta
                 digital</a>
             </li>
             <li>
               <a href="#"
-                class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:dark:hover:text-white light:hover:bg-[#C9C9C9] hover:text-[#EB3850]">Para
+                class="block py-2 px-3 text-white rounded hover:bg-white md:dark:hover:text-white light:hover:bg-white hover:text-[#EB3850]">Para
                 você</a>
             </li>
           </ul>
@@ -52,8 +101,8 @@
     <section class="h-[28rem] bg-[#EB3850] flex text-center justify-center items-center flex-col gap-4 p-4">
       <img class="" src="/assets/img/Cards.png" alt="Cartões Tesla Bank">
 
-      <h3 class="text-white font-bold text-2xl">TeslaBank<br> Banco 100% digital</h3>
-      <p class="text-white">Abrir uma conta digital nunca foi tão simples!</p>
+      <h3 class="text-white font-bold text-2xl lg:hidden">TeslaBank<br> Banco 100% digital</h3>
+      <p class="text-white lg:hidden">Abrir uma conta digital nunca foi tão simples!</p>
 
       <button type="button"
         class="text-[#333333] bg-white focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center hover:text-[#EB3850]">
@@ -72,48 +121,64 @@
 
     <section>
 
+      <div class="lg:flex items-center">
+        <div class="p-8">
 
-      <div class="p-8">
-        <h1 class="font-bold text-[#333333] text-[30px] mt-6 mb-2">Abra sua conta<br><strong
-            class="text-[#EB3850] mb-6">gratuita</strong>!</h1>
-        <p>Envie e receba dinheiro de forma mais prática e rápida. Faça Pix, TEDs e transferências com agendamento para
-          todos os
-          bancos sem pagar nada.</p>
+          <div class="flex justify-center mb-6">
+            <img class="sm:block hidden sm:mb-16" src="/assets/img/CELL-MAIN.png">
+          </div>
+
+          <h1 class="font-bold text-[#333333] text-[30px] mt-6 mb-2">Abra sua conta<br><strong
+              class="text-[#EB3850] mb-6">gratuita</strong>!</h1>
+          <p>Envie e receba dinheiro de forma mais prática e rápida. Faça Pix, TEDs e transferências com agendamento
+            para
+            todos os bancos sem pagar nada.</p>
+
+        </div>
+
+        <ul class="p-8 lg:p-1 lg:mr-14">
+          <li class="sm:flex">
+            <img class="ml-2" src="/assets/img/Element01.png">
+            <div class="sm:ml-3">
+              <h5 class="ml-4 mb-3 text-[20px] text-[#333333] font-[500]">Seu dinheiro rendendo mais</h5>
+              <p class="mb-9 ml-4 text-[#333333] font-[400]">Rendem mais que a poupança e você resgata quando quiser</p>
+            </div>
+          </li>
+          <li class="sm:flex sm:">
+            <img src="/assets/img/Element02.png">
+            <div>
+              <h5 class="ml-4 mb-3 text-[20px] text-[#333333] font-[500]">Conta digital 100% grátis</h5>
+              <p class="mb-9 ml-4 text-[#333333] font-[400]">Transferências, boletos de depósito e outros serviços
+                gratuitos
+            </div>
+            </p>
+          </li>
+          <li class="sm:flex sm:">
+            <img src="/assets/img/Element03.png">
+            <div>
+              <h5 class="ml-4 mb-3 text-[20px] text-[#333333] font-[500]">Cartão sem anuidade</h5>
+              <p class="mb-9 ml-4 text-[#333333] font-[400]">Conta digital com cartão de crédito sem anuidade e sem
+                complicação</p>
+            </div>
+          </li>
+        </ul>
       </div>
-
-      <ul class="p-8">
-        <li class="sm:flex sm:">
-          <img src="/assets/img/Element01.png">
-          <h5 class="ml-4 mb-3 text-[20px] text-[#333333] font-[500]">Seu dinheiro rendendo mais</h5>
-          <p class="mb-9 ml-4 text-[#333333] font-[400]">Rendem mais que a poupança e você resgata quando quiser</p>
-        </li>
-        <li class="sm:flex sm:">
-          <img src="/assets/img/Element02.png">
-          <h5 class="ml-4 mb-3 text-[20px] text-[#333333] font-[500]">Conta digital 100% grátis</h5>
-          <p class="mb-9 ml-4 text-[#333333] font-[400]">Transferências, boletos de depósito e outros serviços gratuitos
-          </p>
-        </li>
-        <li class="sm:flex sm:">
-          <img src="/assets/img/Element03.png">
-          <h5 class="ml-4 mb-3 text-[20px] text-[#333333] font-[500]">Cartão sem anuidade</h5>
-          <p class="mb-9 ml-4 text-[#333333] font-[400]">Conta digital com cartão de crédito sem anuidade e sem
-            complicação</p>
-        </li>
-      </ul>
     </section>
 
-    <section class="bg-[#F2F4FD] h-[2800px]">
+    <section class="bg-[#F2F4FD] p-7 sm:h-[100%]">
 
       <div class="p-8">
         <p class="text-[14px] text-[#EB3850] font-[500] mt-15">#INOVAÇÃO</p>
-        <h1 class="font-[600] text-[30px] font-['Inter'] text-[#333333]">Quais as vantagens<br> de usar <strong class="text-[#EB3850]">TeslaBank</strong>?</h1>
+        <h1 class="font-[600] text-[30px] font-['Inter'] text-[#333333]">Quais as vantagens<br> de usar <strong
+            class="text-[#EB3850]">TeslaBank</strong>?</h1>
       </div>
 
-      <ul>
+      <ul class="sm:grid sm:grid-cols-2 sm:grid-rows-3">
         <li class="bg-white p-14 m-7">
           <i class="text-[36px] text-[#EB3850] ri-bank-card-line"></i>
           <h5 class="text-[20px] font-[500] mb-2 text-[#333333]">Cartão TeslaBank</h5>
-          <p class="font-[400] mb-12">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Aenean vitae leo lacinia, tempus<br> odio
+          <p class="font-[400] mb-12">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Aenean vitae leo
+            lacinia, tempus<br> odio
             hendrerit, ultricies
             diam.</p>
           <a class="font-[600] text-[#EB3850] underline underline-offset-4" href="#">VEJA AS OPÇÕES</a>
@@ -121,7 +186,8 @@
         <li class="bg-white p-14 m-7">
           <i class="text-[36px] text-[#EB3850] ri-shopping-cart-2-line"></i>
           <h5 class="text-[20px] font-[500] mb-2 text-[#333333]">Investimentos</h5>
-          <p class="font-[400] mb-12">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Aenean vitae leo lacinia, tempus<br> odio
+          <p class="font-[400] mb-12">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Aenean vitae leo
+            lacinia, tempus<br> odio
             hendrerit, ultricies
             diam.</p>
           <a class="font-[600] text-[#EB3850] underline underline-offset-4" href="#">CONHEÇO AGORA</a>
@@ -129,7 +195,8 @@
         <li class="bg-white p-14 m-7">
           <i class="text-[36px] text-[#EB3850] ri-time-line"></i>
           <h5 class="text-[20px] font-[500] mb-2 text-[#333333]">Atendimento 24h</h5>
-          <p class="font-[400] mb-12">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Aenean vitae leo lacinia, tempus<br> odio
+          <p class="font-[400] mb-12">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Aenean vitae leo
+            lacinia, tempus<br> odio
             hendrerit, ultricies
             diam.</p>
           <a class="font-[600] text-[#EB3850] underline underline-offset-4" href="#">VEJAS AS OPÇÕES</a>
@@ -137,7 +204,8 @@
         <li class="bg-white p-14 m-7">
           <i class="text-[36px] text-[#EB3850] ri-shield-line"></i>
           <h5 class="text-[20px] font-[500] mb-2 text-[#333333]">Segurança</h5>
-          <p class="font-[400] mb-12">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Aenean vitae leo lacinia, tempus<br> odio
+          <p class="font-[400] mb-12">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Aenean vitae leo
+            lacinia, tempus<br> odio
             hendrerit,
             ultricies
             diam.</p>
@@ -146,7 +214,8 @@
         <li class="bg-white p-14 m-7">
           <h2 class="text-[36px] text-[#EB3850] ">%</h2>
           <h5 class="text-[20px] font-[500] mb-2 text-[#333333]">Sem taxas</h5>
-          <p class="font-[400] mb-12">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Aenean vitae leo lacinia, tempus<br> odio
+          <p class="font-[400] mb-12">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Aenean vitae leo
+            lacinia, tempus<br> odio
             hendrerit,
             ultricies
             diam.</p>
@@ -155,7 +224,8 @@
         <li class="bg-white p-14 m-7">
           <i class="text-[36px] text-[#EB3850] ri-gift-line"></i>
           <h5 class="text-[20px] font-[500] mb-2 text-[#333333]">Receba Prêmios</h5>
-          <p class="font-[400] mb-12">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Aenean vitae leo lacinia, tempus<br> odio
+          <p class="font-[400] mb-12">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Aenean vitae leo
+            lacinia, tempus<br> odio
             hendrerit,
             ultricies
             diam.</p>
@@ -165,11 +235,222 @@
 
     </section>
 
+    <section class="bg-white ">
+
+      <div class="p-8">
+        <p class="text-[14px] text-[#EB3850] font-[500] mt-15 mb-4">#DEPOIMENTOS</p>
+        <h1 class="font-[600] text-[30px] font-['Inter'] text-[#333333]"><strong>TeslaBank fora das telinhas:</strong>
+          Veja o que falam sobre nosso serviço</h1>
+      </div>
+
+      <div>
+        <div class="mt-5">
+          <h3 class="text-[20px] font-[500]"><strong class="text-[#EB3850] ml-7 mr-4">|</strong>NIKOLA TESLA</h3>
+          <p class="ml-7 mt-3 opacity-80">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Vestibulum
+            scelerisque nisl<br> quis viverra tincidunt.</p>
+        </div>
+        <div class="mt-10">
+          <h3 class="text-[20px] font-[500]"><strong class="text-[#EB3850] ml-7 mr-4">|</strong>STEVE JOBS</h3>
+          <p class="ml-7 mt-3 opacity-80">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Vestibulum
+            scelerisque
+            nisl<br> quis viverra tincidunt.</p>
+        </div>
+        <div class="my-10">
+          <h3 class="text-[20px] font-[500]"><strong class="text-[#EB3850] ml-7 mr-4">|</strong>ALAN TURING</h3>
+          <p class="ml-7 mt-3 opacity-80">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Vestibulum
+            scelerisque
+            nisl<br> quis viverra tincidunt.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#F2F4FD] p-7 ">
+      <h2 class="mt-16 text-[24px] font-[600]">Uma nova experiência<br> em <strong class="text-[#EB3850]">serviços
+          financeiros</strong>.<br> Somos digital, somos<br> TeslaBank.</h2>
+      <p class="mt-6">Donec venenatis at turpis at ornare.<br> Pellentesque a quam vel dui lacinia<br> dapibus in sit
+        amet dolor.</p>
+
+      <div class="flex justify-center sm:justify-start gap-[3rem] mt-6">
+        <button class="bg-[#333333] text-white flex items-center gap-[1rem] p-2 rounded-lg">
+          <i class="ri-apple-fill text-[32px]"></i>
+          <div class="flex flex-col">
+            <h6 class="text-[12px] font-extralight">Download via</h6>
+            <p>Apple Store</p>
+          </div>
+        </button>
+        <button class="bg-[#333333] text-white flex items-center gap-[1rem] p-2 rounded-lg">
+          <i class="ri-google-play-fill text-[32px]"></i>
+          <div class="flex flex-col">
+            <h6 class="text-[12px] font-extralight">Download via</h6>
+            <p>Google Play</p>
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <section class="bg-[#F8F9FF] p-7 flex flex-col items-center text-center gap-[1rem]">
+      <p class="text-[14px] text-[#EB3850] font-[500] mt-15 mb-4">#AJUDA</p>
+      <h1 class="font-[600] text-[30px] font-['Inter'] text-[#333333]">Ficou alguma dúvida?</h1>
+      <p class="sm:mb-4">Nullam ornare eu nisi fringilla consectetur.<br> Suspendisse potenti.</p>
+
+      <div class="hs-accordion-group">
+        <div class="hs-accordion sm:flex sm:items-center active" id="hs-basic-heading-one">
+          <img class="hidden sm:block" src="/assets/img/icon.png">
+          <div>
+            <button
+              class="hs-accordion-toggle py-3 inline-flex items-center gap-x-3 w-full font-semibold text-start text-[#333333] hover:text-[#EB3850] rounded-lg disabled:pointer-events-none   dark:focus:outline-none"
+              aria-controls="hs-basic-collapse-two">
+              <svg class="hs-accordion-active:hidden block size-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5v14"></path>
+              </svg>
+              <svg class="hs-accordion-active:block hidden size-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+              </svg>
+              Lorem ipsum dolor sit amet
+            </button>
+            <div id="hs-basic-collapse-two"
+              class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+              aria-labelledby="hs-basic-heading-two">
+              <p class="text-gray opacity-80">
+                Vestibulum faucibus risus eu mi volutpat, vel tristique dui rutrum.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hs-accordion sm:flex sm:items-center" id="hs-basic-heading-two">
+          <img class="hidden sm:block" src="/assets/img/icon.png">
+          <div>
+            <button
+              class="hs-accordion-toggle py-3 inline-flex items-center gap-x-3 w-full font-semibold text-start text-[#333333] hover:text-[#EB3850] rounded-lg disabled:pointer-events-none   dark:focus:outline-none"
+              aria-controls="hs-basic-collapse-two">
+              <svg class="hs-accordion-active:hidden block size-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5v14"></path>
+              </svg>
+              <svg class="hs-accordion-active:block hidden size-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+              </svg>
+              Lorem ipsum dolor sit amet
+            </button>
+            <div id="hs-basic-collapse-two"
+              class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+              aria-labelledby="hs-basic-heading-two">
+              <p class="text-gray opacity-80">
+                Vestibulum faucibus risus eu mi volutpat, vel tristique dui rutrum.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hs-accordion sm:flex sm:items-center" id="hs-basic-heading-two">
+          <img class="hidden sm:block" src="/assets/img/icon.png">
+          <div>
+            <button
+              class="hs-accordion-toggle py-3 inline-flex items-center gap-x-3 w-full font-semibold text-start text-[#333333] hover:text-[#EB3850] rounded-lg disabled:pointer-events-none   dark:focus:outline-none"
+              aria-controls="hs-basic-collapse-two">
+              <svg class="hs-accordion-active:hidden block size-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5v14"></path>
+              </svg>
+              <svg class="hs-accordion-active:block hidden size-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+              </svg>
+              Lorem ipsum dolor sit amet
+            </button>
+            <div id="hs-basic-collapse-two"
+              class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+              aria-labelledby="hs-basic-heading-two">
+              <p class="text-gray opacity-80">
+                Vestibulum faucibus risus eu mi volutpat, vel tristique dui rutrum.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- VARIATION ACCORDION 
+       <div id="accordion-collapse" data-accordion="collapse">
+        <h2 id="accordion-collapse-heading-1">
+          <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 rounded-t-xl dark:text-gray-400 gap-3"
+            data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+            <span>Lorem ipsum dolor sit amet</span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+          <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+            <p class="mb-2 text-gray-500 dark:text-gray-400">Vestibulum faucibus risus eu mi volutpat, vel tristique dui rutrum.</p>
+          </div>
+        </div>
+        <h2 id="accordion-collapse-heading-2">
+          <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+            data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
+            aria-controls="accordion-collapse-body-2">
+            <span>Lorem ipsum dolor sit amet</span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+          <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-gray-500 dark:text-gray-400">Vestibulum faucibus risus eu mi volutpat, vel tristique dui rutrum.</p>
+          </div>
+        </div>
+        <h2 id="accordion-collapse-heading-3">
+          <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+            data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
+            aria-controls="accordion-collapse-body-3">
+            <span>Lorem ipsum dolor sit amet</span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+          <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-gray-500 dark:text-gray-400">Vestibulum faucibus risus eu mi volutpat, vel tristique dui rutrum.</p>
+          </div>
+        </div>
+      </div> -->
+
+    </section>
+
   </main>
+
+  <footer class="bg-white text-center p-4 sm:flex sm:justify-between sm:items-center sm:p-6">
+
+    <p class="text-[12px] text-[#333333]">Copyright © 2024 <strong>TeslaBank</strong> Todos os direitos reservados.</p>
+    <img class="hidden sm:block " src="/assets/img/info.png">
+
+  </footer>
 
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="./node_modules/preline/dist/preline.js"></script>
   <script src="/app/app.js"></script>
 </body>
 
