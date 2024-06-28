@@ -16,50 +16,59 @@
 
   <header class="container_smartphone">
 
-    <!-- NAVBAR NORMAL -->
-    <nav class="bg-white border-gray-200 dark:bg-gray-900 lg:block sm:hidden hidden">
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="/assets/logo/logo-header.png" class="h-8" alt="Flowbite Logo" />
-        </a>
-        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <button type="button"
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get
-            started</button>
-          <button data-collapse-toggle="navbar-cta" type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-cta" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M1 1h15M1 7h15M1 13h15" />
-            </svg>
-          </button>
+    <section class="flex items-center">
+
+      <!-- NAVBAR NORMAL -->
+      <nav class="bg-[#F2F4FD] lg:block sm:hidden lg:pl-16 lg:w-[50%] hidden">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6">
+          <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="/assets/logo/logo.png" class="h-8 ml-4" alt="Flowbite Logo" />
+          </a>
+          <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <button data-collapse-toggle="navbar-cta" type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-cta" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15" />
+              </svg>
+            </button>
+          </div>
+          <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+            <ul
+              class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+              <li>
+                <a href="#"
+                  class="block py-2 px-3 md:p-0 text-white rounded md:bg-transparent md:text-[#EB3850] transition-all duration-300"
+                  aria-current="page">TeslaBank</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block py-2 px-3 md:p-0 text-[#333333] rounded hover:bg-gray-100 md:hover:bg-transparent  md:dark:hover:text-[#EB3850] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition-all duration-300">Conta
+                  digital</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block py-2 px-3 md:p-0 text-[#333333] rounded hover:bg-gray-100 md:hover:bg-transparent md:dark:hover:text-[#EB3850] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition-all duration-300">Pra
+                  você</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block py-2 px-3 md:p-0 text-[#333333] rounded hover:bg-gray-100 md:hover:bg-transparent md:dark:hover:text-[#EB3850] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition-all duration-300">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
-          <ul
-            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
-              <a href="#"
-                class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
-                aria-current="page">Home</a>
-            </li>
-            <li>
-              <a href="#"
-                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
-            </li>
-            <li>
-              <a href="#"
-                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
-            </li>
-            <li>
-              <a href="#"
-                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      </nav>
+
+      <nav class="bg-[#EB3850] hidden lg:block w-[50%] p-7">
+        <button class="ml-60 text-white hover:font-bold hover:underline transition-all duration-300">Login <i
+            class="ri-user-line"></i></button>
+      </nav>
+
+    </section>
 
 
 
@@ -98,22 +107,43 @@
       </div>
     </nav>
 
-    <section class="h-[28rem] bg-[#EB3850] flex text-center justify-center items-center flex-col gap-4 p-4">
-      <img class="" src="/assets/img/Cards.png" alt="Cartões Tesla Bank">
+    <section class="flex">
 
-      <h3 class="text-white font-bold text-2xl lg:hidden">TeslaBank<br> Banco 100% digital</h3>
-      <p class="text-white lg:hidden">Abrir uma conta digital nunca foi tão simples!</p>
+      <section
+        class="h-[28rem] bg-[#EB3850] lg:bg-[#F2F4FD] flex text-center justify-center items-center flex-col gap-4 p-4 w-[50%]">
 
-      <button type="button"
-        class="text-[#333333] bg-white focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center hover:text-[#EB3850]">
-        Abrir uma conta
-        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-          viewBox="0 0 14 10">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M1 5h12m0 0L9 1m4 4L9 9" />
-        </svg>
-      </button>
+        <div>
+          <div>
+            <h3 class="text-white font-bold text-2xl lg:block lg:text-[#EB3850] lg:text-[36px]">TeslaBank<br> Banco 100%
+              digital</h3>
+            <p class="text-white lg:block lg:my-6 lg:text-[#333333] lg:font-medium">Abrir uma conta digital nunca foi
+              tão simples!</p>
+          </div>
+
+          <div class="flex items-center">
+            <button type="button"
+              class="text-[#333333] lg:text-white bg-white lg:bg-[#EB3850] focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center hover:text-[#EB3850] lg:hover:text-white lg:hover: transition-all duration-300">
+              Abrir uma conta
+              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9" />
+              </svg>
+            </button>
+            <div class="flex ml-7 gap-6">
+              <a class="lg:hover:scale-125 transition-all duration-300" href="#"><i class="ri-apple-fill hidden lg:block lg:text-[26px] lg:text-[#EB3850]"></i></a>
+              <a class="lg:hover:scale-125 transition-all duration-300" href="#"><i class="ri-google-play-fill hidden lg:block lg:text-[26px] lg:text-[#EB3850]"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="flex items-center justify-center bg-[#EB3850] lg:w-[50%]">
+        <img class="lg:w-[45%]" src="/assets/img/Cards.png" alt="Cartões Tesla Bank">
+      </section>
     </section>
+
 
   </header>
 
@@ -294,7 +324,7 @@
       <p class="sm:mb-4">Nullam ornare eu nisi fringilla consectetur.<br> Suspendisse potenti.</p>
 
       <div class="hs-accordion-group">
-        <div class="hs-accordion sm:flex sm:items-center active" id="hs-basic-heading-one">
+        <div class="hs-accordion sm:flex sm:items-center sm:active md:active lg:active" id="hs-basic-heading-one">
           <img class="hidden sm:block" src="/assets/img/icon.png">
           <div>
             <button
